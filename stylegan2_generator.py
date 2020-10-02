@@ -202,7 +202,7 @@ class StyleGan2Generator(tf.keras.layers.Layer):
         """
         
         if (weights_name in available_weights) and type(weights_name) == str:
-            data = np.load(weights_stylegan2_dir + weights_name + '.npy', allow_pickle=True)[()]
+            data = np.load(config.weights_dir + weights_name + '.npy', allow_pickle=True)[()]
             
             weights_mapping = [data.get(key) for key in mapping_weights]
             weights_synthesis = [data.get(key) for key in synthesis_weights[weights_name]]
