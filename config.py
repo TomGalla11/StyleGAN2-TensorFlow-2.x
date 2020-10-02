@@ -1,4 +1,4 @@
-weights_dir = 'model/'
+weights_dir = 'weights/'
 result_dir = 'results'
 data_dir = 'datasets'
 cache_dir = 'cache'
