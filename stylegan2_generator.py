@@ -209,7 +209,9 @@ class gen_faces(tf.keras.layers.Layer):
             
             self.mapping_network.set_weights(weights_mapping)
             self.synthesis_network.set_weights(weights_synthesis)
-            
-            print("Loaded {} generator weights!".format(weights_name))
+            if(weights_name=='ffhq'):
+               print('Loaded Face Model!')
+            else:
+               print("Loaded {} weights!".format(weights_name))
         else:
             raise Exception('Cannot load {} weights'.format(weights_name))
