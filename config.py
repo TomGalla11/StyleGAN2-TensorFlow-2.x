@@ -1,6 +1,6 @@
 weights_dir = 'model/'
 result_dir = 'results'
-model_name = 'ffhq1'
+model_name = 'ffhq'
 available_weights = ['ffhq', 'horse']
 data_dir = 'datasets'
 cache_dir = 'cache'
