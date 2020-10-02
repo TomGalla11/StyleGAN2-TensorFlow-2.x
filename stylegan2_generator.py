@@ -114,7 +114,7 @@ class SynthesisNetwork(tf.keras.layers.Layer):
         images_out = y
         return tf.identity(images_out, name='images_out')
     
-class generate_faces(tf.keras.layers.Layer):
+class gen_faces(tf.keras.layers.Layer):
     """
     StyleGan2 generator config f for tensorflow 2.x
     """
@@ -136,7 +136,7 @@ class generate_faces(tf.keras.layers.Layer):
             Wether to use gpu. The default is True.
 
         """
-        super(generate_faces, self).__init__(**kwargs)
+        super(gen_faces, self).__init__(**kwargs)
         
         self.resolution = resolution
         if weights is not None: self.__adjust_resolution(weights)
