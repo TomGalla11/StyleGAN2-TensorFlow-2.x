@@ -8,7 +8,7 @@ file_id = ['1afMN3e_6UuTTPDL63WHaA0Fb9EQrZceE', '1Av4p3JNWkmWsJx6s9Hq32JvlNWSW4k
 	   '16_QtKS2w9-40uxGZ02h3OtFhnJgNgdi_']
 name = ['ffhq.npy', 'cat.npy', 'church.npy', 'horse.npy']
 
-weight_dir = 'weights/'
+weight_dir = 'model/'
 for i in range(len(name)):
     output = weight_dir + name[i]
     url = "https://drive.google.com/uc?id={}".format(file_id[i])
