@@ -1,7 +1,7 @@
 import tensorflow as tf
 import numpy as np
 
-from utils.weights_map import available_weights, synthesis_weights, mapping_weights, weights_stylegan2_dir
+from utils.weights_map import synthesis_weights, mapping_weights
 import config
 from utils.utils_stylegan2 import nf
 from layers.dense_layer import DenseLayer
