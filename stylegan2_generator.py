@@ -201,7 +201,7 @@ class gen_faces(tf.keras.layers.Layer):
 
         """
         
-        if (weights_name in available_weights) and type(weights_name) == str:
+        if (weights_name in config.available_weights) and type(weights_name) == str:
             data = np.load(config.weights_dir + weights_name + '.npy', allow_pickle=True)[()]
             
             weights_mapping = [data.get(key) for key in mapping_weights]
