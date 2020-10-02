@@ -1,4 +1,4 @@
-weights_dir = 'mosel/'
+weights_dir = 'model/'
 result_dir = 'results'
 model_name = 'ffhq'
 available_weights = ['ffhq', 'horse']
